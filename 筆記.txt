@@ -1,0 +1,13 @@
+使用到的好用工具 Extensions : 
+1. es7+ (可以使用 rafcr/rfce 等快速建立)
+2. Tailwind CSS (游標比在 className 上面可以看到他在 CSS 上的效果會是什麼意思)
+
+(https://blog.poychang.net/npm-install-with-legacy-peer-deps/)
+npm --legacy-peer-deps (加上這個參數可以明確告訴 NPM 不要自動安裝 peerDependencies 套件，讓各自的擴充套件使用自己所相依的套件版本)
+
+useEffect ruturn 的要 callback 才不會立即執行
+
+<NavLink /> 在 className 跟 style 可以用 ({isActive}) => isActive ? '' : '';  這是 NavLink 自己有了是否為被選取中的方法了，直接用就可以
+
+
+SparklineComponent(...): Nothing was returned from render; 目前只能寫成 class component 才不會噴這個錯 React.PureComponent
